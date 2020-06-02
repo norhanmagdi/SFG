@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ShowDetailController">
+	<children>
+		<TextArea fx:id="forwardPathsText" editable="false" layoutX="50.0" layoutY="50.0" prefHeight="235.0" prefWidth="345.0">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</TextArea>
+		<TextArea fx:id="loopsText" editable="false" layoutX="405.0" layoutY="50.0" prefHeight="235.0" prefWidth="345.0">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</TextArea>
+		<TextArea fx:id="nonTouchingText" editable="false" layoutX="50.0" layoutY="320.0" prefHeight="235.0" prefWidth="345.0">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</TextArea>
+		<TextArea fx:id="deltasText" editable="false"  layoutX="405.0" layoutY="320.0" prefHeight="235.0" prefWidth="345.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+		<Label layoutX="55.0" layoutY="20.0" text="Forward paths:" textFill="#a125c6">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="410.0" layoutY="20.0" text="Loops:" textFill="#a125c6">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="55.0" layoutY="290.0" text="non-touching loops:" textFill="#a125c6">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="410.0" layoutY="290.0" text="Delta :" textFill="#a125c6">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+	</children>
+</AnchorPane>

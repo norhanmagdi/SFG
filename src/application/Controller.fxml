@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+	prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.Controller">
+	<center>
+		<AnchorPane prefHeight="581.0" prefWidth="800.0"
+			BorderPane.alignment="CENTER">
+			<children>
+				<Group layoutY="100.0">
+					<children>
+						<ScrollPane prefHeight="350.0" prefWidth="800.0">
+							<content>
+								<AnchorPane minHeight="0.0" minWidth="0.0">
+									<children>
+										<Canvas fx:id="canvas" />
+									</children>
+								</AnchorPane>
+							</content>
+						</ScrollPane>
+					</children>
+				</Group>
+				<Label layoutX="14.0" layoutY="43.0" prefHeight="20.0"
+					prefWidth="74.0" text="First node:">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Label>
+				<Label layoutX="218.0" layoutY="43.0" prefHeight="20.0"
+					prefWidth="95.0" text="Second node:">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Label>
+				<Label layoutX="443.0" layoutY="44.0" prefHeight="20.0"
+					prefWidth="56.0" text="Weight:">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Label>
+				<TextField fx:id="firstTxt" layoutX="98.0" layoutY="38.0" prefHeight="20.0"
+					prefWidth ="100.0"  promptText="first node">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</TextField>
+				<TextField fx:id="secondTxt" layoutX="323.0" layoutY="38.0" prefHeight="20.0"
+					prefWidth ="100.0"  promptText="second node">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</TextField>
+				<TextField fx:id="weight" layoutX="519.0" layoutY="38.0" prefHeight="20.0"
+					prefWidth ="100.0"  promptText="weight">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</TextField>
+				<Button fx:id="addEdge" layoutX="640.0" layoutY="38.0"
+						 onAction="#addEdge" prefHeight="20.0"
+						prefWidth="125.0" text="Add Edge">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Button>
+				<Label fx:id="status" alignment="CENTER" layoutX="322.0"
+					layoutY="89.0" prefHeight="17.0" prefWidth="156.0">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Label>
+				<TextField fx:id="result" editable="false" layoutX="160.0"
+						   layoutY="485.0" prefHeight="25.0" prefWidth="300.0"
+						   promptText="Result">
+					<font>
+						<Font size="20.0" />
+					</font>
+				</TextField>
+				<Button fx:id="overAllGain" layoutX="21.0" layoutY="485.0"
+					mnemonicParsing="false" onAction="#solve" prefHeight="44.0"
+					prefWidth="125.0" text="CALCULATE">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Button>
+				<Button fx:id="new" layoutX="550.0" layoutY="485.0"
+						mnemonicParsing="false" onAction="#newGraph" prefHeight="44.0"
+						prefWidth="100.0" text="NEW">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Button>
+				<Button fx:id="details" layoutX="670.0" layoutY="485.0"
+						mnemonicParsing="false" onAction="#showDetail" prefHeight="44.0"
+						prefWidth="100.0" text="DETAILS">
+					<font>
+						<Font size="14.0" />
+					</font>
+				</Button>
+			</children>
+		</AnchorPane>
+	</center>
+</BorderPane>
